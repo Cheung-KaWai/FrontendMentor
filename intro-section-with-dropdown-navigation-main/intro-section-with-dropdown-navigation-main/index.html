@@ -1,39 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="logo" class="nav__logo" />
+        <ul class="nav__menu">
+          <li class="nav__menu__item"><button>Features</button></li>
+          <li class="nav__menu__item"><button href="">Company</button></li>
+          <li class="nav__menu__item"><a href="">Careers</a></li>
+          <li class="nav__menu__item"><a href="">About</a></li>
+          <li class="nav__menu__item"><a href="">Login</a></li>
+          <li class="nav__menu__item"><a href="">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container--left">
+          <h1 class="hero__title">Make remote work</h1>
+          <p class="hero__text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="" class="hero__cta">Learn more</a>
+          <div class="hero__clients">
+            <img src="./images/client-databiz.svg" alt="logo databiz" />
+            <img src="./images/client-audiophile.svg" alt="logo audiophile" />
+            <img src="./images/client-meet.svg" alt="logo meet" />
+            <img src="./images/client-maker.svg" alt="logo maker" />
+          </div>
+        </div>
+        <div class="hero__container--right">
+          <img src="./images/image-hero-desktop.png" alt="" class="hero__img" />
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

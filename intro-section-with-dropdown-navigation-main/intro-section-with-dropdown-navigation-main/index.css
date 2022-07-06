@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  min-height: 100vh;
+  font-family: "Epilogue", sans-serif;
+  background-color: #fafafa;
+}
+
+.nav {
+  display: flex;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.nav__logo {
+  align-self: center;
+}
+
+.nav__menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav__menu__item > a {
+  text-decoration: none;
+  color: #686868;
+}
+
+.nav__menu__item:nth-child(1) > button,
+.nav__menu__item:nth-child(2) > button {
+  border: none;
+  background-color: #fff;
+  font-size: 1.8rem;
+  color: #686868;
+  cursor: pointer;
+}
+
+.nav__menu__item:nth-child(1) > button::after,
+.nav__menu__item:nth-child(2) > button::after {
+  content: url("./images/icon-arrow-down.svg");
+  vertical-align: middle;
+  padding-left: 1rem;
+  position: relative;
+  bottom: 3px;
+}
+
+.nav__menu__item:nth-child(4) {
+  margin-right: auto;
+}
+
+.nav__menu__item:last-child {
+  border: 1.5px solid #686868;
+  padding: 1rem 2rem;
+  border-radius: 1.4rem;
+}
+
+.hero {
+  display: flex;
+  gap: 10rem;
+  padding: 10rem 10rem;
+  max-height: 90vh;
+}
+
+.hero__container--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+  width: 60%;
+}
+
+.hero__container--right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hero__title {
+  font-size: 8rem;
+  font-weight: 700;
+}
+
+.hero__text {
+  font-size: 1.8rem;
+  color: #686868;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.hero__cta {
+  background-color: #151515;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+}
+
+.hero__clients {
+  margin-top: auto;
+}
