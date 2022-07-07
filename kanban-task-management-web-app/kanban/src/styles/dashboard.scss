@@ -1,0 +1,29 @@
+@use "variables";
+
+.empty {
+  background-color: variables.$dark-background;
+  min-height: calc(100vh - 65px);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  p {
+    font-size: variables.$headingL;
+    color: variables.$medium-gray;
+    text-align: center;
+  }
+
+  button {
+    color: variables.$white;
+    font-size: variables.$headingM;
+    font-weight: bold;
+    background-color: variables.$main-purple;
+    padding: 1.5rem 3rem;
+    border-radius: 25px;
+  }
+}
