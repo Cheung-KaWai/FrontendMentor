@@ -30,7 +30,13 @@ export default function AddColumns({ hideForm }) {
                               className="input"
                             />
                           </label>
-                          <DeleteInput onClick={() => remove(index)} />
+                          <DeleteInput
+                            onClick={() => {
+                              if (values.columns.length !== 1) {
+                                remove(index);
+                              }
+                            }}
+                          />
                         </div>
                       ))}
                   </div>
@@ -41,6 +47,7 @@ export default function AddColumns({ hideForm }) {
                   >
                     Add New Column
                   </button>
+                  <span className="line" />
                   <button className="saveButton">Save Changes</button>
                 </div>
               )}

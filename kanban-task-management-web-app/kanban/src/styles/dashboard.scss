@@ -24,7 +24,7 @@
     font-weight: bold;
     background-color: variables.$main-purple;
     padding: 1.5rem 3rem;
-    border-radius: 25px;
+    border-radius: 5px;
   }
 }
 
@@ -39,16 +39,16 @@
   z-index: 5;
   width: calc(100vw - 40px);
   max-width: 40rem;
-  border-radius: 6px;
+  border-radius: 5px;
 
   h2 {
     margin-bottom: 2rem;
     font-size: variables.$headingL;
-    font-weight: 500;
+    font-weight: 600;
   }
   h3 {
     margin-bottom: 1rem;
-    font-weight: 400;
+    font-weight: 500;
   }
 
   .listInputs {
@@ -92,12 +92,20 @@
     font-size: variables.$bodyL;
   }
 
+  .line {
+    width: 100%;
+    background-color: rgba(130, 143, 163, 0.25);
+    height: 1px;
+    border-radius: 10rem;
+    display: block;
+    margin: 1rem 0;
+  }
+
   .saveButton {
     width: 100%;
     padding: 1rem 0;
     color: variables.$white;
     background-color: variables.$main-purple;
-    margin-top: 2rem;
     font-size: variables.$bodyL;
   }
 }
