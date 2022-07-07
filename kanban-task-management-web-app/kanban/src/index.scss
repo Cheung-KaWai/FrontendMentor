@@ -29,9 +29,15 @@ body {
     list-style: none;
   }
 
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+
   button {
     background-color: inherit;
     border: none;
+    cursor: pointer;
   }
 
   code {
