@@ -11,7 +11,7 @@ export default function AddColumns() {
   const addColumns = (values) => {
     dispatch(boardActions.hideFormAddColumns());
     //Save columns in redux
-    alert(JSON.stringify(values, null, 2));
+    dispatch(boardActions.addColumns(values));
   };
 
   return (
@@ -52,7 +52,9 @@ export default function AddColumns() {
                     Add New Column
                   </button>
                   <span className="line" />
-                  <button className="saveButton">Save Changes</button>
+                  <button className="saveButton" type="submit">
+                    Save Changes
+                  </button>
                 </div>
               )}
             </FieldArray>

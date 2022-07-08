@@ -10,6 +10,13 @@ const boardSlice = createSlice({
     hideFormAddColumns(state) {
       state.showAddColumns = false;
     },
+    addColumns(state, action) {
+      const { columns } = action.payload;
+      const checkValues = columns.filter(
+        (column) => !state.columns.includes(column)
+      );
+      state.columns = [...state.columns, ...checkValues];
+    },
   },
 });
 

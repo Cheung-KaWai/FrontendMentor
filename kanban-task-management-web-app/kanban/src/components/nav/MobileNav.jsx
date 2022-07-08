@@ -12,7 +12,6 @@ export default function MobileNav() {
   return (
     <div className="navContainer">
       <MobileLogo />
-      {console.log(showMenu)}
       <nav>
         <h1>
           <button onClick={() => setShowMenu((prev) => !prev)}>
