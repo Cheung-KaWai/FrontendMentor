@@ -13,7 +13,7 @@ const boardSlice = createSlice({
     addColumns(state, action) {
       const { columns } = action.payload;
       const checkValues = columns.filter(
-        (column) => !state.columns.includes(column)
+        (column) => !state.columns.includes(column) && column
       );
       state.columns = [...state.columns, ...checkValues];
     },
