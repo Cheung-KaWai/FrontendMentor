@@ -2,10 +2,14 @@ import React from "react";
 import "../../styles/dashboard.scss";
 import { Formik, Field, Form, FieldArray } from "formik";
 import { ReactComponent as DeleteInput } from "../../images/input-cross.svg";
+import { boardActions } from "../../store/board-slice";
+import { useDispatch } from "react-redux";
 
-export default function AddColumns({ hideForm }) {
+export default function AddColumns() {
+  const dispatch = useDispatch();
+
   const addColumns = (values) => {
-    hideForm();
+    dispatch(boardActions.hideFormAddColumns());
     //Save columns in redux
     alert(JSON.stringify(values, null, 2));
   };
