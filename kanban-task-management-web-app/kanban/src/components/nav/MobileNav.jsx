@@ -6,6 +6,8 @@ import { ReactComponent as Settings } from "../../images/icon-vertical-ellipsis.
 import { ReactComponent as Add } from "../../images/icon-add-task-mobile.svg";
 import { useState } from "react";
 
+import { useSelector } from "react-redux";
+
 export default function MobileNav() {
   const [showMenu, setShowMenu] = useState(false);
 
@@ -38,8 +40,10 @@ const Menu = () => {
 };
 
 const AddButton = () => {
+  const disable = useSelector((state) => state.board.columns);
+
   return (
-    <button className="addButton">
+    <button className={`addButton ${disable.length === 0 && "opacityHalf"}`}>
       <Add />
     </button>
   );

@@ -134,6 +134,10 @@
   overflow: scroll;
 }
 
+.dashboard::-webkit-scrollbar {
+  display: none;
+}
+
 .column {
   width: 30rem;
 }
